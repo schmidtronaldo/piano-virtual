@@ -1,17 +1,18 @@
-const bgSound = document.querySelector('audio');
-bgSound.volume = 0.5;
-bgSound.play();
+const bgMusic = new Audio;
+bgMusic.src = 'src/bgSound/nature.mp3'
+bgMusic.volume = 0.5;
+bgMusic.play();
 
 const pianoKeys = document.querySelectorAll(".piano-keys .key");
 const volumeSlider = document.querySelector(".volume-slider input");
 const keysCheck = document.querySelector(".keys-check input");
 
 let mapedKeys = [];
-let audio = new Audio("src/tunes/a.wav");
+let tecla = new Audio("src/tunes/a.wav");
 
 const playTune = (key) => {
-  audio.src = `src/tunes/${key}.wav`;
-  audio.play();
+  tecla.src = `src/tunes/${key}.wav`;
+  tecla.play();
 
   const clickedKey = document.querySelector(`[data-key="${key}"]`);
   clickedKey.classList.add("active");
@@ -32,7 +33,7 @@ document.addEventListener("keydown", (e) => {
 });
 
 const handleVolume = (e) => {
-  audio.volume = e.target.value;
+  console.log(e.target.value);
 };
 
 const showHideKeys = () => {

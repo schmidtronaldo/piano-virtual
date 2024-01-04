@@ -89,6 +89,7 @@ header .column span {
   border: 1px solid black;
   border-radius: 8px;
   background: linear-gradient(#fff 96%, #eee 4%);
+  margin: 0 5px;
 }
 
 .piano-keys .black {
