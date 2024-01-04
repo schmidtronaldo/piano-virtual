@@ -1,3 +1,6 @@
+const bgSound = document.querySelector('audio');
+bgSound.volume =0.5;
+
 const pianoKeys = document.querySelectorAll(".piano-keys .key");
 const volumeSlider = document.querySelector(".volume-slider input");
 const keysCheck = document.querySelector(".keys-check input");

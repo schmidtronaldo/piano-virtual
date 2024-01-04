@@ -3,19 +3,20 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #e3f2fd;
-  color: #fff;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  
 }
 
 .container {
   width: 780px;
   border-radius: 20px;
   padding: 35px 40px;
-  background-color: black;
+  background-color: #3532fc55;
 }
 
 .container header {
-  color: #b2b2b2;
+  color: #f7f0f0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,6 +72,7 @@ header .column span {
 .piano-keys {
   display: flex;
   margin-top: 40px;
+  justify-content: center;
 }
 .piano-keys .key {
   cursor: pointer;
@@ -90,7 +92,7 @@ header .column span {
 }
 
 .piano-keys .black {
-  width: 44px;
+  width: 35px;
   height: 140px;
   z-index: 2;
   margin: 0 -22px 0 -22px;
